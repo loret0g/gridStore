@@ -13,11 +13,11 @@
 
 html {
     font-size: 62.5%;
-    box-sizing: border-box;         /* Quitar el Box model: Se suma el height+padding */
+    box-sizing: border-box;
     scroll-snap-type: y mandatory;
 }
 *, *:before, *:after {
-    box-sizing: inherit;            /* No se hará el box-model, o sea -> no se sumará */
+    box-sizing: inherit;
 }
 
 body {
@@ -46,7 +46,7 @@ img {
 
 .contenedor {
     max-width: 120rem;
-    margin: 0 auto;     /* Esto lo centra */
+    margin: 0 auto;
 }
 
 h1, h2, h3 {
@@ -114,10 +114,7 @@ h3 {
     padding: 0.5rem 1rem;
     transition: color 0.4s ease-in-out;
 }
-/* Seleccionar el último enlace y quitarle el margin (esto si no lo hicieramos con el gap, y le pusieramos margin.. quedaría extraño)
-.navegacion__enlace:last-of-type {
-    margin-right: 0;
-} */
+
 .navegacion__enlace::before,
 .navegacion__enlace::after {
     content: "";
@@ -174,13 +171,13 @@ h3 {
 /* Grid */
 .grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);          /* Que se vean dos en el móvil */
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     margin: .5rem .5rem;
 }
 @media (min-width: 768px) {
     .grid{
-        grid-template-columns: repeat(3, 1fr);      /* Que se vean 3 en pantallas más grandes */
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
@@ -240,7 +237,7 @@ h3 {
 /** NOSOTROS **/
 .nosotros {
     display: grid;
-    grid-template-rows: repeat(2, auto);    /* Con el 'auto' mejor para cuando se posicione abajo el texto, en vez de 1fr */
+    grid-template-rows: repeat(2, auto);
 }
 @media (min-width: 768px) {
     .nosotros {
@@ -252,7 +249,7 @@ h3 {
     margin: 1rem;
 }
 .nosotros__imagen {
-    grid-row: 1 / 2;        /* Para poner la imagen antes que el texto */
+    grid-row: 1 / 2;
 }
 @media (min-width: 768px) {
     .nosotros__imagen {
@@ -309,7 +306,7 @@ h3 {
     color: var(--secundarioOscuro);
     font-size: 1rem;
     padding: .5rem;
-    appearance: none;   /* Flechita del select */
+    appearance: none;
 }
 @media (min-width: 700px) {
     .formulario__campo {
