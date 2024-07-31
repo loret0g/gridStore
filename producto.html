@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrontEnd Store</title>
+    <link rel="icon" href="img/logo.png">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo+Play:wght@200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Syne+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html">
+            <!-- <img class="header__logo" src="img/logo.png" alt="Logotipo"> -->
+            <h1 class="header__logo">[ gridStore ]</h1>
+        </a>
+        <nav class="navegacion">
+            <a href="index.html" class="navegacion__enlace navegacion__enlace--activo">Tienda</a>
+            <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+        </nav>
+    </header>
+
+    <main class="contenedor">
+        <h1 class="titulo_producto"></h1>
+        <div class="camisa">
+            <img class="camisa__imagen" alt="imagen del producto">
+            <div class="camisa__contenido">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi optio atque omnis debitis cumque, fugit dicta? Modi odit perspiciatis architecto provident similique, nulla, sit, ducimus possimus quam consectetur quos consequuntur.Accusantium veniam maiores iusto temporibus nostrum rem velit, provident error, voluptates iure cumque sapiente qui praesentium nisi mollitia ad distinctio voluptas repellat?</p>
+                <form class="formulario">
+                    <select class="formulario__campo">
+                        <option disabled selected>-- Seleccionar talla --</option>
+                        <option value="peque">S</option>
+                        <option value="mediana">M</option>
+                        <option value="grande">L</option>
+                    </select>
+                    <input class="formulario__campo" type="number" placeholder="Cantidad" min="1">
+                    <input class="formulario__submit" type="submit" value="Agregar al carrito">
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>Tienda para practicar GRID</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
